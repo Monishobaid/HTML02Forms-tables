@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Welcome to Forms</title>
+    </head>
+    <body>
+        <h1>Welcome to the forms</h1>
+        <form>
+            <div>
+                <label for="username">Name<span>*</span></label>
+                <input placeholder="Write Name" id = "username" required/>
+            </div>
+            <div>
+                <label for ="user_email">Email<span>*</span></label>
+                <input type="email" placeholder="Write Email" id="user_email" required/>
+            </div>
+            <div>
+                <label for="user_password">Phone<span>*</span></label>
+                <input type="password" placeholder="Write Password" id="user_password" required/>
+            </div>
+            <div>
+                <label for="PhoneNumber">Phone Number<span>*</span></label>
+                <input type="tel" placeholder="Write PhoneNumber" id="PhoneNumber" maxlength="10" required/>
+            </div>
+            <div>
+                <label for="user_age">Age</label>
+                <input type="number" placeholder="Write Age" id="user_age" min="0" max="100"/>
+            </div>
+            <div>
+                <span>Gender: </span>
+                <label for="male">Male</label>
+                <input name="gender" id="male" type="radio"/>
+                <label for="female">Female</label>
+                <input name="gender" id="female" type="radio"/>
+                <label for="others">Others</label>
+                <input name="gender" id="others" type="radio"/>
+            </div>
+            <div>
+                <label>States</label>
+                <select id="States">
+                    <option disabled="" selected>Select Your State</option>
+                    <optgroup label="North States">
+                        <option id="up">UP</option>
+                        <option id="jk">Jammu and kashmir</option>
+                        <option id="punjab"> Punjab</option>
+                    </optgroup>
+                    <optgroup label="South States">
+                        <option id="Kerala">Kerala</option>
+                        <option id="TM">Tamil Nadu</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="message">Write a Message</label>
+                <textarea placeholder="Enter The Message Here" rows="3"></textarea>
+            </div>
+            <div>
+                <label for="terms">I Agree With Terms and Conditions</label>
+                <input id="terms" name="terms" type="checkbox"/>
+            </div>
+            <input type="submit" />
+        </form>
+    </body>
+</html>

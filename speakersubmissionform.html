@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Form Submission</title>
+    </head>
+    <body>
+        <header><h1>Form Submission for the Speaker</h1></header>
+        <p><i>If you want to participate in the Conference 101 Kindly Fill up this Form.</i></p>
+
+        <form>
+            <div>
+                <label for="user_name">Name</label>
+                <input type="text" id="user_name" placeholder="Enter your Name" required/>
+            </div>
+            <div>
+                <label for="user_email">Email</label>
+                <input type="email" id="user_email" placeholder="Enter your Email" required/>
+            </div>
+            <div>
+                <span>Type of Talk: </span>
+                <label for="main_stage">Main Stage</label>
+                <input type="radio" id="main_stage" name="type_of_talk"/>
+                <label for="workshop">WorkShop</label>
+                <input type="radio" id="workshop" name="type_of_talk"/>
+            </div>
+            <div>
+                <label for="size">T-Shirt Size:</label>
+                <input name="size" id="size" list="sizes">
+                <datalist id="sizes">
+                    <option value="M">
+                    <option value="L">
+                    <option value="XL">
+                </datalist>
+            </div>
+            <div>
+                <label for="text">Enter your Speech Submission</label><br>
+                <textarea placeholder="write your speech in 500 words" rows="5"></textarea>
+            </div>
+            <div>
+                <label for="agreement">Agree with Terms and Conditions</label>
+                <input type="checkbox" id="agreement" required/>
+            </div>
+        </form>
+    </body>
+</html>
